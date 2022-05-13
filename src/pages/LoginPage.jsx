@@ -62,7 +62,7 @@ export function LoginPage() {
     onSubmit: ({ email, password }) => {
       // console.log(email, password);
       dispatch(authOperations.logIn({ email, password }));
-      alert(JSON.stringify(` ${email} ${password}`, null, 2));
+      // alert(JSON.stringify(` ${email} ${password}`, null, 2));
       formik.handleReset();
     },
   });
