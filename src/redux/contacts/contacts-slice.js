@@ -36,15 +36,15 @@ const contactsSlice = createSlice({
       state.isLoading = true;
     },
     [contactsOperations.editContact.fulfilled](state, action) {
-      console.log(state);
+      // console.log(state);
       state.contacts = [
         ...state.contacts.map(contact => {
-          console.log(contact);
-          console.log(contact.id);
-          console.log(contact.id);
+          // console.log(contact);
+          // console.log(contact.id);
+          // console.log(contact.id);
 
           if (contact.id === action.payload.id) {
-            console.log(contact.number);
+            // console.log(contact.number);
             contact.number = action.payload.number;
           }
           return contact;

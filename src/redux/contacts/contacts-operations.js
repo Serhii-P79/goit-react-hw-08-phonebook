@@ -1,6 +1,6 @@
-import axios, { Axios } from 'axios';
+import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { number } from 'prop-types';
+// import { number } from 'prop-types';
 
 const getContacts = createAsyncThunk('contacts/get', async () => {
   try {
@@ -37,7 +37,7 @@ const editContact = createAsyncThunk('contacts/edit', async contactInfo => {
   };
   try {
     const { data } = await axios.patch(`/contacts/${contactID}`, editData);
-    console.log(data);
+    // console.log(data);
     return data;
   } catch (error) {
     //gdfgd

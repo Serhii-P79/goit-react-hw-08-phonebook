@@ -6,9 +6,9 @@ export function PublicRoute({ children }) {
   const location = useLocation();
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
 
-  console.log(children);
-  console.log(isLoggedIn);
-  console.log(location);
+  // console.log(children);
+  // console.log(isLoggedIn);
+  // console.log(location);
 
   const fromPage = location.state?.from?.pathname || '/';
 

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import toast from 'react-hot-toast';
 // import PropTypes from 'prop-types';
-import { CssForm, CssContactList, ContactItem } from 'components';
+import { CssContactList, ContactItem } from 'components';
 
 import { useSelector, useDispatch } from 'react-redux';
 //import { deleteContact } from 'redux/store';
@@ -10,7 +10,7 @@ import { useSelector, useDispatch } from 'react-redux';
 //import { useAddContactMutation } from 'utilities/contacts';
 //import { useDeleteContactMutation } from 'redux/contacts/contacts';
 
-import { setDisabledButton } from 'redux/store';
+// import { setDisabledButton } from 'redux/store';
 import { contactsOperations } from 'redux/contacts';
 
 import Button from '@mui/material/Button';
@@ -45,7 +45,7 @@ export function ContactList() {
   const contacts = useSelector(state => state.contacts.contacts);
   const isLoading = useSelector(state => state.contacts.isLoading);
   const filter = useSelector(state => state.filter.value);
-  const isDisabledButton = useSelector(state => state.isDisabledButton.value);
+  // const isDisabledButton = useSelector(state => state.isDisabledButton.value);
 
   //dispatch(setDisabledButton(isDeleting));
   // console.log('isDisabledButton - ', isDisabledButton);
@@ -54,8 +54,8 @@ export function ContactList() {
 
   const getFilteringContactsServer = () => {
     const normolizeFiltr = filter.toLowerCase();
-    console.log('normolizeFiltr - ', normolizeFiltr);
-    console.log('contacts - ', contacts);
+    // console.log('normolizeFiltr - ', normolizeFiltr);
+    // console.log('contacts - ', contacts);
     return contacts.filter(({ name }) =>
       name.toLowerCase().includes(normolizeFiltr)
     );
@@ -67,7 +67,7 @@ export function ContactList() {
     contactsServer = getFilteringContactsServer();
   }
   //}
-  console.log(contactsServer);
+  // console.log(contactsServer);
   // console.log(error);
 
   // const getFilteringContacts = () => {

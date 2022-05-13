@@ -4,16 +4,9 @@ import { useDispatch } from 'react-redux';
 import { authOperations } from 'redux/auth';
 // import { nanoid } from 'nanoid';
 import { GlobalStyle } from './GLobalStyle';
-import {
-  ContactForm,
-  Filter,
-  ContactList,
-  CssApp,
-  ContactCounter,
-  Layout,
-} from 'components';
+import { Layout, CssApp } from 'components';
 
-import { Routes, Route, Link, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { HomePage, RegisterPage, LoginPage, ContactsPage } from 'pages';
 import { RequireAutch, PublicRoute } from 'hoc';
 

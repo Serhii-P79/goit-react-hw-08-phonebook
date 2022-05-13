@@ -46,7 +46,7 @@ export function RegisterPage() {
     },
     validationSchema: validationSchema,
     onSubmit: ({ login: name, email, password }) => {
-      console.log(name, email, password);
+      // console.log(name, email, password);
       dispatch(authOperations.register({ name, email, password }));
       alert(JSON.stringify(`${name} ${email} ${password}`, null, 2));
       formik.handleReset();

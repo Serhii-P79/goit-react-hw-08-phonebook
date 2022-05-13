@@ -6,9 +6,9 @@ export function RequireAutch({ children }) {
   const location = useLocation();
   const isLoggedIn = useSelector(authSelectors.getIsLoggedIn);
 
-  console.log(children);
-  console.log(isLoggedIn);
-  console.log(location);
+  // console.log(children);
+  // console.log(isLoggedIn);
+  // console.log(location);
 
   return (
     <>
