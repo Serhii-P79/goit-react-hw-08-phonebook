@@ -46,7 +46,7 @@ const refreshCurentUser = createAsyncThunk(
   async (_, thunkAPI) => {
     const state = thunkAPI.getState();
     const persistedToken = state.auth.token;
-
+    // persistedToken = '1321';
     if (!persistedToken) {
       return thunkAPI.rejectWithValue();
     }
@@ -56,7 +56,10 @@ const refreshCurentUser = createAsyncThunk(
       const { data } = await axios.get('/users/current');
       // console.log(data);
       return data;
+      // console.log('try - ');
     } catch (error) {
+      // console.log('error - ', error);
+      return thunkAPI.rejectWithValue();
       //gdfgd
     }
   }
