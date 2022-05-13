@@ -2,8 +2,8 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 // import { CssForm } from 'сomponents';
 
-import { useSelector, useDispatch } from 'react-redux';
-import { useGetContactsQuery } from 'redux/contacts/contacts';
+import { useSelector } from 'react-redux';
+// import { useGetContactsQuery } from 'redux/contacts/contacts';
 
 // import { setfilter } from 'redux/store';
 

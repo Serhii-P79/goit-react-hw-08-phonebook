@@ -1,7 +1,7 @@
-import { Routes, Route, Link, NavLink } from 'react-router-dom';
+// import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import { Outlet } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import { UserMenu, AuthNav, AppBar } from 'components';
+import { AppBar } from 'components';
 import { Main } from './Layout.styled';
 
 export function Layout() {

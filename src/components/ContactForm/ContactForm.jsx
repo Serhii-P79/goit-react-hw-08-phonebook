@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { useState } from 'react';
 // import PropTypes from 'prop-types';
@@ -9,12 +9,12 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import toast from 'react-hot-toast';
 
-import {
-  useCreateContactMutation,
-  useGetContactsQuery,
-} from 'redux/contacts/contacts';
+// import {
+//   useCreateContactMutation,
+//   useGetContactsQuery,
+// } from 'redux/contacts/contacts';
 
-import { setDisabledButton } from 'redux/store';
+// import { setDisabledButton } from 'redux/store';
 
 import { contactsOperations } from 'redux/contacts';
 
@@ -40,7 +40,7 @@ export const ContactForm = ({ initName = '', initNumber = '' }) => {
   //  console.log('isCreating (1) - ', isCreating);
   // const isDisabledButton = useSelector(state => state.isDisabledButton.value);
   const contacts = useSelector(state => state.contacts.contacts);
-  const isLoading = useSelector(state => state.contacts.isLoading);
+  // const isLoading = useSelector(state => state.contacts.isLoading);
   // console.log('isDeleting - contact form: ', isDeleting);
   const dispatch = useDispatch();
   //dispatch(setDisabledButton(isCreating));
